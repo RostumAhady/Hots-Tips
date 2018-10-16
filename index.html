@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">	
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/scss/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Rostum Ahady Portfolio</title>
+</head>
+<body>
+	<div class="showcase">
+			<div class="sc-text">
+				<div class="textCont" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" >
+					<h1 class="greet">Oh, Good Evening!</h1>
+					<h1>Below are some recent <br> <span>projects I've worked on.</span></h1>
+					<a class="button" href="#scroll">Show me your moves!</a>
+				</div>
+			</div>
+		</div>
+		<div id="scroll" class="aboutCont">
+				<div class="textCont" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
+					<h2>Me, Myself and I</h2>
+					<p>I am a passionate developer who likes to keep up with the latest trends. Always wanting to learn more and never too afraid to ask why</p>
+				</div>
+		</div>
+		<div class="languageGrid">
+			<div id="c1">
+					<div class="textCont" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="350" data-aos-once="true">
+						<i class="fab fa-html5 fa-4x"></i>
+						<i class="fab fa-css3-alt fa-4x"></i>
+						<i class="fab fa-js-square fa-4x"></i>
+						<h2>HTML, CSS & JS</h2>
+						<p>The foundation of markup, including SASS.</p>
+					</div>
+			</div>
+			<div id="c2">
+					<div class="textCont" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="650" data-aos-once="true">
+						<i class="fas fa-mobile fa-4x"></i>
+						<h2>Approach</h2>
+						<p>Responsive Design, Mobile First Development, CSS grid</p>
+					</div>
+			</div>
+			<div id="c3">
+					<div class="textCont" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="950" data-aos-once="true">
+						<i class="fas fa-code-branch fa-4x"></i>
+						<h2>Version Control</h2>
+						<p>Git command line, Github and Github Desktop</p>
+					</div>
+			</div>
+			<div id="c4">
+					<div class="textCont" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="1250" data-aos-once="true">
+						<i class="fas fa-angle-double-up fa-4x"></i>
+						<h2>Levelin' Up</h2>
+						<p> HTML to Wordpress theme, jquery, interacting with JSON</p>
+					</div>
+			</div>
+		</div>
+		<div id="projectMain">
+			<div id="arcadia-text">
+					<div class="textCont">
+						<h2>Arcadia Scaffolding</h2>
+						<p>In collaboration with a Web Designer, this was developed based on a design spec for a client.
+							Also, as per client request, this custom Wordpress theme's content can be modified without the
+							need to alter any code. 
+						</p>
+						<a class="button" href="#">Link to Site</a>
+						<a id="git1" class="button" href="#">Github <i class="fab fa-github"></i></a>
+					</div>
+				
+			</div>
+			<div id="arcadia-bg"> 
+				<div class="textCont">
+					<img src="/img/laptops001.png" class="laptop" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="650" data-aos-once="true">
+				</div>
+			</div>
+		</div>
+		<div id="projectGrid">
+			<div class="projectItem p1">
+				<div data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="textCont">
+					<h2>Hots Tips</h2>
+					<p>A website in progress using JSON to display game tips for users.</p>
+					<a class="button" href="#">Link to Site</a>
+					<a id="git2" class="button" href="#">Github <i class="fab fa-github"></i></a>
+				</div>
+			</div>
+			<div class="projectItem p2">
+				<div  data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="textCont">
+					<h2>Trump Soundboard</h2>
+					<p>A site for all the "bing bing bong" lovers out there</p>
+					<a class="button" href="#">Link to Site</a>
+					<a id="git3" class="button" href="#">Github <i class="fab fa-github"></i></a>
+				</div>
+			</div>
+			<div class="penLogo"><i class="fab fa-codepen fa-4x"></i></div>
+			<div class="projectItem p3">
+				<div class="codepenCont textCont" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
+					<h2>Code Pen</h2>
+					<p>Have a look at all my <span><a href="www.codepen.io">pens</a></span> or view my favourite ones below!</p>
+					<a class="button" href="#">Gallery</a>
+					<a class="button" href="#">Charge Up</a>
+				</div>
+			</div>
+		</div>
+		<div class="contact">
+			<form class="contactForm" method="post" action="contact-form-handler.php">
+				<h2>Contact Me</h2>
+				<input class="input" name="name" type="text" placeholder="Your Name" required/>
+				<input class="input" name="email" type="email" placeholder="Your Email" required/>
+				<input class="input" name="subject" type="text" placeholder="Subject" required/>
+				<textarea class="textarea" name="message" type="textarea" placeholder="Your message" required></textarea>
+				<input class="button" type="submit" value="Send" >
+			</form>
+		</div>
+		
+ 	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="/js/script.js"></script>
+	<script src="/js/scroll.js"></script>
+   <!-- Fade in effects -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    
+</body>
+</html>
