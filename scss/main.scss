@@ -1,1 +1,117 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.banner{
+    background: url(/img/heroes.jpg) no-repeat 0;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    div{
+        border: 1px solid #000;
+    }
+}
+
+.selectHero{
+    display: none;
+    width: max-content;
+    height: max-content;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    input{
+        width: 250px;
+        height: 40px;
+    }
+}
+
+.selectMap{
+    height: 100%;
+    width: 100%;
+    // display: grid;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    .map{
+        background: url('https://via.placeholder.com/900x200') no-repeat 0;
+        background-size: cover;
+        background-position: center;
+        grid-auto-columns: auto;
+        grid-auto-rows: auto;
+        display:grid;
+        justify-content: center;
+        align-content: center;
+        h2{
+            width: max-content;
+            height: max-content;
+            background: green;
+
+        }
+    }
+}
+.heroInfo {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 15% 70% 15%;
+    .heroInfoGrid{
+        grid-area: 2 / 2 / 3 / 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'heroImg statsCont matchups'
+        'heroImg tips tips';
+        .heroImg{
+            height: 100%;
+            justify-self: center;
+            grid-area: heroImg;
+        }
+        .statsCont{
+            display: grid;
+            align-content: center;
+            grid-area: statsCont;
+        }
+        .matchups{
+            text-align: center;
+            display: grid;
+            grid-area: matchups;
+            img{
+                padding: 0 10px;
+            }
+            .weak{
+                align-self: end;
+            }
+        }
+        .tips{
+            grid-area: tips;
+            li{
+                padding: 10px 0;
+            }
+        }
+    }
+
+    
+    // display: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 50px 0;
+    font-size: 20px;
+    td {
+        font-size: 16px;
+        padding: 10px 0;
+      }
+  }
+  
+  
