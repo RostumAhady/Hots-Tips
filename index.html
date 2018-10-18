@@ -14,8 +14,11 @@
 		<div class="selectHero">
 			<h2>Search your hero</h2>
 			<input type="text" class="searchHero">
+			<input type="button" class="button" value="GO">
+			<ul class="suggestions">
+			</ul>
 		</div>
-		<div class="selectMap">
+		<div class="displayNone selectMap">
 			<div class="map"><h2>X</h2></div>
 			<div class="map"><h2>X</h2></div>
 			<div class="map"><h2>X</h2></div>
@@ -31,26 +34,22 @@
 			<div class="map"><h2>X</h2></div>
 			<div class="map"><h2>X</h2></div>
 		</div>
-		<div class="heroInfo">
+		<div class="displayNone heroInfo">
 			<div class="heroInfoGrid">
 				<img src="/img/tracer.png" alt="" class="heroImg">
 				<div class="statsCont">
 					<!-- table data goes here -->
 					<table>
 						<tbody>
-								<tr>
-										<th>Win Rate</th>
-										<th>Popularity</th>
-								</tr>
-								<tr>
-									<td>82%</td>
-									<td>5%</td>
-								</tr>
+							<tr>
+								<th>Win Rate</th>
+								<th>Popularity</th>
+							</tr>
+							<tr>
+								<td>82%</td>
+								<td>5%</td>
+							</tr>
 						</tbody>
-						
-						
-						
-						
 					</table>
 				</div>
 				<div class="matchups">
@@ -69,11 +68,8 @@
 				</div>
 				<div class="tips">
 						<h2>Tips:</h2>
-						<ul>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
+						<ul class="tipList">
+						
 						</ul>
 					</div>
 			</div>
@@ -88,11 +84,10 @@
 
 
 
-
-	<!-- <script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
 	<script src="/js/script.js"></script>
-	<script src="/js/scroll.js"></script> -->
+	<!-- <script src="/js/scroll.js"></script> -->
    <!-- Fade in effects -->
    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
     <!-- <script>AOS.init();</script> -->

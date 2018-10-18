@@ -13,24 +13,27 @@ body {
   height: 100%;
   width: 100%;
   display: grid; }
-  .banner div {
-    border: 1px solid #000; }
 
 .selectHero {
-  display: none;
   width: max-content;
   height: max-content;
   justify-self: center;
   align-self: center;
   text-align: center; }
-  .selectHero input {
+  .selectHero .searchHero {
+    display: inline-block;
     width: 250px;
     height: 40px; }
+  .selectHero .button {
+    display: inline-block;
+    height: 40px;
+    margin-left: -3px;
+    margin-bottom: -1px; }
 
 .selectMap {
+  display: grid;
   height: 100%;
   width: 100%;
-  display: none;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
   .selectMap .map {
@@ -55,6 +58,7 @@ body {
   grid-template-rows: 15% 70% 15%; }
   .heroInfo .heroInfoGrid {
     grid-area: 2 / 2 / 3 / 3;
+    grid-gap: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -71,14 +75,21 @@ body {
       text-align: center;
       display: grid;
       grid-area: matchups; }
+      .heroInfo .heroInfoGrid .matchups .strong, .heroInfo .heroInfoGrid .matchups .weak {
+        margin: 10px 0; }
       .heroInfo .heroInfoGrid .matchups img {
         padding: 0 10px; }
       .heroInfo .heroInfoGrid .matchups .weak {
         align-self: end; }
     .heroInfo .heroInfoGrid .tips {
-      grid-area: tips; }
+      grid-area: tips;
+      padding: 20px; }
       .heroInfo .heroInfoGrid .tips li {
         padding: 10px 0; }
+
+.statsCont, .matchups, .tips {
+  background-image: linear-gradient(to bottom, #20105d, #4b0097);
+  border: 2px solid #7a7acc; }
 
 table {
   border-collapse: separate;
@@ -87,5 +98,26 @@ table {
   table td {
     font-size: 16px;
     padding: 10px 0; }
+
+.suggestions {
+  padding: 0;
+  position: fixed;
+  width: 249px; }
+
+.listItem {
+  color: #000;
+  margin: 0;
+  list-style-type: none;
+  text-align: left;
+  padding: 4px 10px;
+  background: #fff;
+  width: 100%;
+  border-bottom: 0.5px solid #000;
+  cursor: pointer; }
+  .listItem:hover {
+    background: #6982c2; }
+
+.displayNone {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

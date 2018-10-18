@@ -15,56 +15,62 @@ body{
     height: 100%;
     width: 100%;
     display: grid;
-    div{
-        border: 1px solid #000;
-    }
 }
 
 .selectHero{
-    display: none;
+    //toggle display
     width: max-content;
     height: max-content;
     justify-self: center;
     align-self: center;
     text-align: center;
-    input{
+    .searchHero{
+        display: inline-block;
         width: 250px;
         height: 40px;
+    }
+    .button{
+        display: inline-block;
+        height: 40px;
+        margin-left: -3px;
+        margin-bottom: -1px;
     }
 }
 
 .selectMap{
-    height: 100%;
-    width: 100%;
-    // display: grid;
-    display: none;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    .map{
-        background: url('https://via.placeholder.com/900x200') no-repeat 0;
-        background-size: cover;
-        background-position: center;
-        grid-auto-columns: auto;
-        grid-auto-rows: auto;
-        display:grid;
-        justify-content: center;
-        align-content: center;
-        h2{
-            width: max-content;
-            height: max-content;
-            background: green;
+    //toggle display
+    display: grid;
+	height: 100%;
+	width: 100%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	.map{
+			background: url('https://via.placeholder.com/900x200') no-repeat 0;
+			background-size: cover;
+			background-position: center;
+			grid-auto-columns: auto;
+			grid-auto-rows: auto;
+			display:grid;
+			justify-content: center;
+			align-content: center;
+			h2{
+					width: max-content;
+					height: max-content;
+					background: green;
 
-        }
-    }
+			}
+	}
 }
 .heroInfo {
+    //toggle display
     display: grid;
     width: 100%;
     height: 100%;
     grid-template-columns: 15% 70% 15%;
     grid-template-rows: 15% 70% 15%;
     .heroInfoGrid{
-        grid-area: 2 / 2 / 3 / 3;
+				grid-area: 2 / 2 / 3 / 3;
+				grid-gap: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -84,7 +90,10 @@ body{
         .matchups{
             text-align: center;
             display: grid;
-            grid-area: matchups;
+						grid-area: matchups;
+						.strong, .weak{
+							margin: 10px 0;
+						}
             img{
                 padding: 0 10px;
             }
@@ -93,7 +102,8 @@ body{
             }
         }
         .tips{
-            grid-area: tips;
+						grid-area: tips;
+						padding: 20px;
             li{
                 padding: 10px 0;
             }
@@ -103,7 +113,10 @@ body{
     
     // display: none;
 }
-
+.statsCont, .matchups, .tips{
+	background-image: linear-gradient(to bottom, #20105d, #4b0097);
+	border: 2px solid #7a7acc;
+}
 table {
     border-collapse: separate;
     border-spacing: 50px 0;
@@ -112,6 +125,31 @@ table {
         font-size: 16px;
         padding: 10px 0;
       }
-  }
+	}
+	
+
+.suggestions{
+    padding: 0;
+    position: fixed;
+    width: 249px;
+}	
+
+.listItem{
+	color: #000;
+	margin: 0;
+	list-style-type: none;
+	text-align: left;
+	padding: 4px 10px;
+	background: #fff;
+	width: 100%;
+	border-bottom: 0.5px solid #000;
+	cursor: pointer;
+	&:hover{
+		background: rgb(105, 130, 194);
+	}
+}
   
+.displayNone{
+    display: none;
+}
   
