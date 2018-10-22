@@ -1,9 +1,67 @@
 [
+
+	{
+		"name": "Abathur",
+		"img": "/img/Abathur.png",
+		"tip1": "Symbiote minions or structures to soak xp when no allies are present",
+		"tip2": "Cancelling symbiote early and using it again is faster than waiting for symbiote abilities to refresh",
+		"tip3": "Use Toxic Nests in common paths used to rotate lanes or in bushes.",
+		"tip4": "You can use Z on any location you have vision of.",
+		"tip5": "Ultimate Evolution should be saved for major team fights, usually over map objectives."
+	},
 	{
 		"name": "Alarak",
 		"img": "/img/Alarak_Paintover.jpg",
 		"tip1": "Don't be bad",
 		"tip2": "Don't be bad",
-		"tip3": "No seriously, stop being bad"
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Anub'arak",
+		"img": "/img/Anub'arak.jpg",
+		"tip1": "I'm not that bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Artanis",
+		"img": "/img/Abathur.png",
+		"tip1": "I'm not that bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Arthas",
+		"img": "/img/Alarak_Paintover.jpg",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Auriel",
+		"img": "/img/Abathur.png",
+		"tip1": "I'm not that bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Azmodan",
+		"img": "/img/Alarak_Paintover.jpg",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
 	}
+
 ]

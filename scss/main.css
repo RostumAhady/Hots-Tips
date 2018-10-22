@@ -20,15 +20,24 @@ body {
   justify-self: center;
   align-self: center;
   text-align: center; }
+  .selectHero .container {
+    width: max-content; }
   .selectHero .searchHero {
     display: inline-block;
-    width: 250px;
+    padding-left: 7px;
+    width: auto;
     height: 40px; }
   .selectHero .button {
     display: inline-block;
+    width: 45px;
     height: 40px;
-    margin-left: -3px;
-    margin-bottom: -1px; }
+    margin-left: -3px; }
+  .selectHero h2 {
+    font-size: 3rem; }
+  .selectHero .suggestions {
+    padding: 0;
+    width: 193px;
+    position: absolute; }
 
 .selectMap {
   display: grid;
@@ -54,8 +63,8 @@ body {
   display: grid;
   width: 100%;
   height: 100%;
-  grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 15% 70% 15%; }
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 10% 80% 10%; }
   .heroInfo .heroInfoGrid {
     grid-area: 2 / 2 / 3 / 3;
     grid-gap: 20px;
@@ -65,8 +74,10 @@ body {
     grid-template-areas: 'heroImg statsCont matchups' 'heroImg tips tips'; }
     .heroInfo .heroInfoGrid .heroImg {
       height: 100%;
+      width: 450px;
       justify-self: center;
-      grid-area: heroImg; }
+      grid-area: heroImg;
+      border-radius: 50px; }
     .heroInfo .heroInfoGrid .statsCont {
       display: grid;
       align-content: center;
@@ -87,6 +98,22 @@ body {
       .heroInfo .heroInfoGrid .tips li {
         padding: 10px 0; }
 
+.return {
+  grid-area: 1 / 1 / 2 / 2;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center; }
+  .return .fas {
+    transform: translateY(15px);
+    cursor: pointer; }
+    .return .fas:hover {
+      color: #3b20aa; }
+
+.selected {
+  background: #3b20aa; }
+
 .statsCont, .matchups, .tips {
   background-image: linear-gradient(to bottom, #20105d, #4b0097);
   border: 2px solid #7a7acc; }
@@ -99,11 +126,6 @@ table {
     font-size: 16px;
     padding: 10px 0; }
 
-.suggestions {
-  padding: 0;
-  position: fixed;
-  width: 249px; }
-
 .listItem {
   color: #000;
   margin: 0;
@@ -112,7 +134,6 @@ table {
   padding: 4px 10px;
   background: #fff;
   width: 100%;
-  border-bottom: 0.5px solid #000;
   cursor: pointer; }
   .listItem:hover {
     background: #6982c2; }
