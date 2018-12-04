@@ -2,20 +2,42 @@ const button = document.querySelector('.button')
 const grid1 = document.querySelector('.selectHero')
 const grid2 = document.querySelector('.heroInfo')
 const tipList = document.querySelector('.tipList')
-const heroImg = document.querySelector('.heroImg')
+const heroImg = document.querySelector('.character')
+const alignTop = document.querySelector('.align-top')
+const alignLeft = document.querySelector('.align-left')
+const alignRight = document.querySelector('.align-right')
+const alignBottom = document.querySelector('.align-bottom')
 const search = document.querySelector('.searchHero')
 const suggestions = document.querySelector('.suggestions')
 const returnArrow = document.querySelector('.fa-arrow-left')
-search.addEventListener('keyup', displayMatches);
-button.addEventListener('click', showHeroInfo);
+const error = document.querySelector('.error')
+const userSearch = document.querySelector('.userSearch')
+
+
 
 // API hotsapi.net and adding into empty array variable
-const heroesEndpoint = 'http://hotsapi.net/api/v1/heroes'
+const heroesEndpoint = 'http://hotsapi.net/api/v1/heroes';
 let heroes = [];
 
-fetch(heroesEndpoint)
-    .then(res => res.json())
-    .then(data => heroes = data); 
+// added async-await 
+const getHero = async () => {
+    const response = await fetch(heroesEndpoint)
+    if (response.status === 200){
+        const data = await response.json()
+        return data
+    }  else {
+        throw new Error('Unable to get hero')
+    }
+}
+window.onload = getHero().then((data) => {
+    heroes = data
+}).catch((err) => {
+    console.log(`Error: ${err}`)
+})
+// fetch(heroesEndpoint)
+//     .then(res => res.json())
+//     .then(data => heroes = data); 
+
 // to match the user input text to the names of all heroes in API
 function findMatches(wordToMatch, heroes){
     return heroes.filter(hero => {
@@ -24,7 +46,10 @@ function findMatches(wordToMatch, heroes){
         
     })
 }
+
+
 // display the matches that are found in API and display them as a list
+search.addEventListener('keyup', displayMatches);
 function displayMatches(){
     const matchArray = findMatches(this.value, heroes);
     const html = matchArray.map(hero =>{
@@ -56,80 +81,201 @@ window.onload = function fetchData(){
     .then(res => res.json())
     .then(data => character = data); 
 }
-
+let found = false;
 //uses findMatches again to compare user search to local json. if matched, will display hero info.
+button.addEventListener('click', showHeroInfo);
 function showHeroInfo(){
+    if(search.value === ""){
+        return
+    }
     const matchArray = findMatches(search.value, character);
+
+    for(var j = 0; j < matchArray.length; j++) {
+    if (matchArray[j].name == search.value) {
+        found = true;
+     }
+    }
+
+    if(matchArray === undefined || matchArray.length == 0 || found == false){
+        userSearch.innerHTML = search.value;
+        if(error.classList.contains("active")){
+        return
+        } else{
+        error.classList.add("active")
+        setTimeout(() => {
+
+            error.classList.remove("active")
+                
+            }, 2000);
+        }
+        return
+    }
+    
     grid1.classList.add("displayNone");
     grid2.classList.remove("displayNone");
     const tips = matchArray.map(chara =>{
         heroImg.src = `${chara.img}`;
         return `
-            <li>${chara.tip1}</li>
-            <li>${chara.tip2}</li>
-            <li>${chara.tip3}</li>
-            <li>${chara.tip4}</li>
-            <li>${chara.tip5}</li>
+            <li class="tipsItem">${chara.tip1}</li>
+            <li class="tipsItem">${chara.tip2}</li>
+            <li class="tipsItem">${chara.tip3}</li>
+            <li class="tipsItem">${chara.tip4}</li>
+            <li class="tipsItem">${chara.tip5}</li>
         `;
     }).join('');
     tipList.innerHTML = tips;
+    found = false;
+    const heroArray = findMatches(search.value, heroes);
+    // console.log(heroArray);
+    
+    // alignTop.innerHTML = abilities;
+    setTimeout(() => {
+        alignLeft.classList.add("active");
+        alignRight.classList.add("active");
+        alignTop.classList.add("active");
+        alignBottom.classList.add("active");
+    }, 100);    
 }
+//add hover link to ability name
+
+// function isAbility(){
+//     if(tipsItem.innerHTML.includes(heroes.abilities.title))
+// }
+
+
 
 // use enter to submit
 search.addEventListener('keydown', (e) => {
     if(e.keyCode == 13){
-        showHeroInfo();
         e.preventDefault();
+        const selected = document.querySelector('.selected');
+        const doesSelectedExist = document.getElementsByClassName('selected');
+        if(doesSelectedExist.length > 0){
+            search.value = selected.innerText;
+            return
+        }
+        showHeroInfo();
+        
+    }
+})
+
+let x = -1;
+search.addEventListener('keyup', (e) =>{
+    const listItems = document.querySelectorAll('.listItem');
+    if(e.keyCode == 38){
+        x--
+        if (x < 0){
+            x = listItems.length - 1
+        }
+        listItems[x].classList.add('selected');
+        
+    }
+    if(e.keyCode == 40){
+        x++
+        if (x > listItems.length - 1){
+            x = 0
+        }
+        listItems[x].classList.add('selected');
+        
+        
     }
 })
 
 // return to search hero page
-
 returnArrow.addEventListener('click', () => {
     grid2.classList.add("displayNone");
     grid1.classList.remove("displayNone");
+    alignTop.classList.remove("active");
+    alignLeft.classList.remove("active");
+    alignRight.classList.remove("active");
+    alignBottom.classList.remove("active");
     clearFields()
 })
-
 // clear search field and suggestions
 function clearFields(){
     search.value = '';
     suggestions.innerHTML = '';
+    x = -1;
 }
 
-// key down through list items
 
-// const li = document.querySelectorAll('.listItem');
-// let liSelected;
-// window.addEventListener('keydown', (e) => {
-//     if(e.which === 40){
-//         if(liSelected){
-//             liSelected.removeClass('selected');
-//             next = liSelected.next();
-//             if(next.length > 0){
-//                 liSelected = next.addClass('selected');
-//             }else{
-//                 liSelected = li.eq(0).addClass('selected');
-//             }
-//         }else{
-//             liSelected = li.eq(0).addClass('selected');
-//         }
-//     }else if(e.which === 38){
-//         if(liSelected){
-//             liSelected.removeClass('selected');
-//             next = liSelected.prev();
-//             if(next.length > 0){
-//                 liSelected = next.addClass('selected');
-//             }else{
-//                 liSelected = li.last().addClass('selected');
-//             }
-//         }else{
-//             liSelected = li.last().addClass('selected');
-//         }
+
+
+
+
+
+//todays date
+let today = new Date();
+let dd = today.getDate();
+let mm = today.getMonth()+1;
+let yyyy = today.getFullYear();
+let todayDate = yyyy + '-' + mm + '-' + dd;
+
+//date 7 days ago
+let days = 7;
+let last = new Date(today.getTime() - (days * 24 * 60 * 60 * 1000));
+let day =last.getDate();
+let month=last.getMonth()+1;
+let year=last.getFullYear();
+let lastWeek = year + '-' + month + '-' + day;
+console.log(todayDate, lastWeek)
+
+
+
+
+
+
+// function getData(i){
+//     let ;
+//     let apiPromises = [];
+//     for(i = 1; i < 150; i++){
+//         fetch(`https://hotsapi.net/api/v1/replays/paged?page=${i}&start_date=${lastWeek}&end_date=${todayDate}&with_players=true`)
+//         .then(res => res.json())
+//         .then(data => apiPromises = data); 
+    
+//         console.log(apiPromises);
 //     }
 
-// });
+// }
 
+// function fetchMetaData(){
+//     let pagesRequired = 20;
+//     fetch('https://hotsapi.net/api/v1/replays/paged?page=20')
+//     .then(resp => {
+//         let apiPromises = [];
+//         pagesRequired = resp.data.pagesRequired;
+//         for (let i=pagesRequired; i>0;i--) {
+//             apiPromises.push(fetch(`https://hotsapi.net/api/v1/replays/paged?page=${i}&start_date=${lastWeek}&end_date=${todayDate}&with_players=true`));
+//         }
+//         Promise.all(apiPromises)
+//         .then(responses => {
+//             let processedResponses = [];
+//             responses.map(response => {
+//                 processedResponses.push(response);
+//             })
 
+//             console.log(processedResponses)
 
+//         })
 
+//     })
+// }
+
+function fetchMetaData(){
+    let i;
+    let apiData = [];
+    for (i = 20; i>0; i--) {
+        apiData.push(fetch(`https://hotsapi.net/api/v1/replays/paged?page=${i}&start_date=${lastWeek}&end_date=${todayDate}&with_players=true`));
+    }
+    Promise.all(apiData)
+        .then(responses => {
+            let processedResponses = [];
+            responses.map(response => {
+                processedResponses.push(response);
+            })
+         
+            // not sure what to do now
+
+        })
+       
+}

@@ -11,8 +11,26 @@
 	},
 	{
 		"name": "Alarak",
-		"img": "/img/Alarak_Paintover.jpg",
+		"img": "/img/Alarak.png",
+		"tip1": "Press Alt+W to push yourself in the direction you are facing",
+		"tip2": "Don't just use W to push enemies towards you, you can move them into your allies.",
+		"tip3": "Be patient with your E, getting the center damage is easier than it seems",
+		"tip4": "Know your enemy, Counter Strike timing is crucial",
+		"tip5": "Go into Try Mode and practice using your W and Q together. Practice makes perfect!"
+	},
+	{
+		"name": "Alexstrasza",
+		"img": "https://via.placeholder.com/400x400",
 		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Ana",
+		"img": "/img/Anub'arak.jpg",
+		"tip1": "I'm not that bad",
 		"tip2": "Don't be bad",
 		"tip3": "No seriously, stop being bad",
 		"tip4": "No seriously, stop being bad",
@@ -38,7 +56,7 @@
 	},
 	{
 		"name": "Arthas",
-		"img": "/img/Alarak_Paintover.jpg",
+		"img": "https://via.placeholder.com/400x400",
 		"tip1": "Don't be bad",
 		"tip2": "Don't be bad",
 		"tip3": "No seriously, stop being bad",
@@ -56,12 +74,681 @@
 	},
 	{
 		"name": "Azmodan",
-		"img": "/img/Alarak_Paintover.jpg",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Brightwing",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Blaze",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Cassia",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Chen",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Cho",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Chromie",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "D.Va",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Dehaka",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Diablo",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Deckard",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "E.T.C",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Falstad",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Fenix",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Gall",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Garrosh",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Gazlowe",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Genji",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Greymane",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Gul'dan",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Hanzo",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Illidan",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Jaina",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Johanna",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Junkrat",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Kael'thas",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Kel'Thuzad",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Kerrigan",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Kharazim",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Leoric",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Li Li",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Li-Ming",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Lt. Morales",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Lúcio",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Lunara",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Maiev",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Malfurion",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Mal'Ganis",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Malthael",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Medivh",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Mephisto",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Muradin",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Murky",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Nazeebo",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Nova",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Probius",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Ragnaros",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Raynor",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Rehgar",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Rexxar",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Samuro",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Sgt. Hammer",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Sonya",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Stitches",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Stukov",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Sylvanas",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Tassadar",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "The Butcher",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "The Lost Vikings",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Thrall",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Tracer",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Tychus",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Tyrael",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Tyrande",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Uther",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Valeera",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Valla",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Varian",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Whitemane",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Xul",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Yrel",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Zagara",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Zarya",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Zeratul",
+		"img": "https://via.placeholder.com/400x400",
+		"tip1": "Don't be bad",
+		"tip2": "Don't be bad",
+		"tip3": "No seriously, stop being bad",
+		"tip4": "No seriously, stop being bad",
+		"tip5": "No seriously, stop being bad"
+	},
+	{
+		"name": "Zul'jin",
+		"img": "https://via.placeholder.com/400x400",
 		"tip1": "Don't be bad",
 		"tip2": "Don't be bad",
 		"tip3": "No seriously, stop being bad",
 		"tip4": "No seriously, stop being bad",
 		"tip5": "No seriously, stop being bad"
 	}
+	
+
+
 
 ]

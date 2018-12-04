@@ -23,78 +23,71 @@ body{
     height: max-content;
     justify-self: center;
     align-self: center;
-		text-align: center;
-		.container{
-			width: max-content;
-		}
+    text-align: center;
+    .container{
+        width: max-content;
+    }
+    .error{
+        opacity: 0;
+        background: rgb(161, 53, 53);
+        border-radius: 5px;
+        transition: all 0.5s ease;
+    }
     .searchHero{
 				display: inline-block;
 				padding-left: 7px;
-        width: auto;
-				height: 40px;
+        width: 300px;
+				height: 50px;
+				padding: 5px;
+				&:focus{
+					outline: none;
+				}
+
     }
     .button{
 				display: inline-block;
-				width: 45px;
-        height: 40px;
-        margin-left: -3px;
+				width: 55px;
+				height: 49px;
+				border-radius: 5px;
+        
 		}
 		h2{
 			font-size: 3rem;
 		}
 		.suggestions{
 			padding: 0;
-			width: 193px;
+			width: 300px;
+			border-radius: 5px;
 			position: absolute;
 	}	
 }
 
-.selectMap{
-    //toggle display
-    display: grid;
-	height: 100%;
-	width: 100%;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	.map{
-			background: url('https://via.placeholder.com/900x200') no-repeat 0;
-			background-size: cover;
-			background-position: center;
-			grid-auto-columns: auto;
-			grid-auto-rows: auto;
-			display:grid;
-			justify-content: center;
-			align-content: center;
-			h2{
-					width: max-content;
-					height: max-content;
-					background: green;
-
-			}
-	}
-}
 .heroInfo {
     //toggle display
     display: grid;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 10% 80% 10%;
     .heroInfoGrid{
 				grid-area: 2 / 2 / 3 / 3;
 				grid-gap: 20px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-rows: 50% 50%;
         grid-template-areas: 
         'heroImg statsCont matchups'
-        'heroImg tips tips';
+        'tips tips tips';
         .heroImg{
             height: 100%;
-            width: 450px;
+            width: 100%;
             justify-self: center;
             grid-area: heroImg;
             border-radius: 50px;
+            .character{
+                height: 100%;
+                width: 100%;
+            }
         }
         .statsCont{
             display: grid;
@@ -141,7 +134,7 @@ body{
     }    
 }
 .selected{
-    background: #3b20aa;
+    background: rgb(105, 130, 194) !important;
 }
 .statsCont, .matchups, .tips{
 	background-image: linear-gradient(to bottom, #20105d, #4b0097);
@@ -175,4 +168,26 @@ table {
 .displayNone{
     display: none;
 }
-  
+.align-left{
+    transform:translateX(-30%);
+}
+.align-right{
+    transform:translateX(130%);
+}
+.align-top{
+    transform: translateY(-30%);
+}
+.align-bottom{ 
+    transform: translateY(130%);
+}
+.slide-in{
+    opacity: 0;
+    transition: all 1s;
+}
+.active{
+    opacity: 1 !important;
+    transform: translateX(0%);
+}
+.hoverText{
+    color: green;
+}

@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">	
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/scss/main.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Rostum Ahady Portfolio</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">    
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Heroes Tips</title>
 </head>
 <body>
 	<div class="banner">
 		<div class="selectHero">
+			<div class="error">
+				<h4><span class="userSearch"></span> is not a real hero!</h4>
+			</div>
 			<h2>Search your hero</h2>
 			<div class="container">
 				<form>
@@ -27,9 +31,12 @@
 					<i class="fas fa-arrow-left fa-4x"></i>
 			</div>
 			<div class="heroInfoGrid">
-				<img src="/img/tracer.png" alt="" class="heroImg">
-				<div class="statsCont">
+				<div class="slide-in align-left heroImg">
+					<img src="" class="character"/>
+				</div>
+				<div class="slide-in align-top statsCont">
 					<!-- table data goes here -->
+					
 					<table>
 						<tbody>
 							<tr>
@@ -43,7 +50,7 @@
 						</tbody>
 					</table>
 				</div>
-				<div class="matchups">
+				<div class="slide-in align-right matchups">
 					<div class="strong">
 						<h2>Strong Against:</h2>
 						<img src="https://via.placeholder.com/70x70" alt="" class="heroStrong">
@@ -57,7 +64,7 @@
 						<img src="https://via.placeholder.com/70x70" alt="" class="heroWeak">
 					</div>
 				</div>
-				<div class="tips">
+				<div class="slide-in align-bottom tips">
 						<h2>Tips:</h2>
 						<ul class="tipList">
 						
